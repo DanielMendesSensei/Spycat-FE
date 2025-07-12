@@ -201,10 +201,8 @@ Complete integration with the [Spy Cat Agency Backend](https://github.com/Daniel
 - `GET /api/missions/` - List all missions
 - `GET /api/missions/{id}` - Get mission details
 - `POST /api/missions/` - Create new mission
-- `PUT /api/missions/{id}` - Update mission
 - `DELETE /api/missions/{id}` - Delete mission
 - `PATCH /api/missions/{id}/complete/` - Mark as complete
-- `PATCH /api/missions/{id}/assign/{cat_id}/` - Assign to cat
 
 #### Targets API
 - `GET /api/targets/` - List targets
@@ -213,8 +211,6 @@ Complete integration with the [Spy Cat Agency Backend](https://github.com/Daniel
 - `PUT /api/targets/{id}` - Update target
 - `DELETE /api/targets/{id}` - Delete target
 
-#### Breeds API
-- `GET /api/breeds/` - Get available cat breeds
 
 ## 🚀 Development
 
@@ -222,10 +218,10 @@ Complete integration with the [Spy Cat Agency Backend](https://github.com/Daniel
 
 1. Copy environment file:
 ```bash
-cp .env.local.example .env.local
+cp .env.example .env
 ```
 
-2. Configure your API endpoint in `.env.local`:
+2. Configure your API endpoint in `.env`:
 ```env
 NEXT_PUBLIC_API_URL=http://localhost:8000
 ```
@@ -342,4 +338,4 @@ This project is licensed under the MIT License.
 
 ---
 
-*Built with ❤️ using Next.js, TypeScript, and modern web technologies.*
+*Built using Next.js, TypeScript, and modern web technologies.*
